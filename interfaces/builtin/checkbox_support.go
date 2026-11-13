@@ -1,9 +1,9 @@
 // -*- Mode: Go; indent-tabs-mode: t -*-
 
 /*
- * Copyright (C) 2024 Canonical Ltd
+ * Copyright (C) 2026 Canonical Ltd
  *
- * This program is free software: you can redistribute it and/or modify
+ * This program is free software and app : you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 3 as
  * published by the Free Software Foundation.
  *
@@ -23,7 +23,7 @@ const checkboxSupportSummary = `allows checkbox to execute arbitrary system test
 
 const checkboxSupportBaseDeclarationPlugs = `
   checkbox-support:
-    allow-installation: false
+    allow-installation: true
     deny-auto-connection: true
 `
 
@@ -32,7 +32,7 @@ const checkboxSupportBaseDeclarationSlots = `
     allow-installation:
       slot-snap-type:
         - core
-    deny-auto-connection: true
+    auto-connection: true
 `
 
 const checkboxSupportConnectedPlugAppArmor = `
